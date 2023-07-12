@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
+    <style>
+          * {
+      margin: 0px auto;
+      padding: 0px;
+      list-style: none;
+    }
+    .menulevel1 {
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    .menulevel1>li:hover>ul {
+        display: block;
+    }
+    .menulevel2 {
+      position: absolute;
+      font-size: 12px;
+      width: 100px;
+      text-align:left;
+      display: none;
+      background-color: #f5f5f5;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menulevel1">
+            <li>
+                <h2>购物车</h2>
+                <ul class="menulevel2">
+                    <li>已选择宝贝</li>
+                    <li>购买历史记录</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

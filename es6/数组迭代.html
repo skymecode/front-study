@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+     let phone = ['小米','三星','苹果','一加','乐视','OPPO','VIVO','魅族','联想'];
+    phone.forEach((item,index,arr)=>{
+        // console.log(item);
+    })
+   let newPhone= phone.map((x)=>{
+    console.log(x);
+        return x+'手机';
+       
+    })
+    console.log(phone,newPhone);
+   let f= phone.filter((item,index,arr)=>{
+        console.log('fillter:'+item);
+        return item=='小米';
+    })
+    console.log('f:'+f);
+</script>
+</html>

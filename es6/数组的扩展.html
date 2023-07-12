@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的扩展</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function sum() {
+        console.log(Array.from(arguments));
+    }
+
+    sum(1, 2);
+    Array.of(1, 2, 3);
+    let arr = [1, 23, 232, 111, 3];
+    let number = arr.find(function (item, index) {
+        return item > 1;
+    })
+    console.log(number);
+    let number2 = arr.findIndex(function (item, index, arr) {
+        return item > 1;
+    })
+    console.log(number2);
+
+    function count(a, b) {
+        return a + b;
+    }
+    count(...[1, 2]);
+</script>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>overflow等高效果</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .ul {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0px auto;
+            list-style: none;
+        }
+
+        .ul>li {
+            width: 20%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .bg-color {
+            height: 200px;
+            background-color: #fedcba;
+        }
+
+        /* 行高24px，高48px，设置为可以显示两排文字。 */
+        /* overflow: hidden; 如果文字超过三排，自动隐藏。 */
+        .desc {
+            line-height: 24px;
+            height: 48px;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="ul">
+        <li>
+            <section>
+                <div class="bg-color"></div>
+                <!-- 这里文字两排刚好展示完 -->
+                <p class="desc">一二三四五六七八九十二二三四五六七八九十三二三四五六</p>
+            </section>
+            
+        </li>
+        <li>
+            <section>
+                <div class="bg-color"></div>
+                <!-- 如果不是用overflow: hidden;文字会超过两排。 -->
+                <p class="desc">一二三四五六七八九十二二三四五六七八九十三二三四五六七八九十</p>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div class="bg-color"></div>
+                <p class="desc">一二三四五六七八九十二二三四五六七八九十三二三四五六七八九十</p>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div class="bg-color"></div>
+                <p class="desc">一二三四五六七八九十二二三四五六七八九十三二三四五六七八九十</p>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div class="bg-color"></div>
+                <p class="desc">一二三四五六七八九十二二三四五六七八九十三二三四五六七八九十</p>
+            </section>
+        </li>
+    </ul>
+</body>
+</html>

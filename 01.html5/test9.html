@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+<script>
+    let div1=document.querySelector(".div1");
+    let div2=document.querySelector(".div2");
+    let arr = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+    let i = 0;
+    setInterval(function(){
+        div1.innerHTML ="<h1>"+arr[i]+"</h1>"+"<p>"+arr[i]+"</p>";
+        div2.innerText ="<h1>"+arr[i]+"</h1>"+"<p>"+arr[i]+"</p>";
+        i++;
+        if(i==arr.length){
+            i=0;
+        }
+
+    },1000);
+</script>
+</html>

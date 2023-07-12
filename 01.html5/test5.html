@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一行多列</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+
+        }
+        .ul-container {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            /* 换行 */
+            flex-wrap: wrap;
+            /* 次轴对齐方式 */
+            align-items: center;
+            background-color: aqua;
+        }
+        .ul-container>li {
+            
+            margin-left: 5px;
+           margin-bottom: 10px;
+            box-sizing: border-box;
+           
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul-container">
+        <li><h2><span>菜单1</span></h2></li>
+        <li><h2><span>菜单1</span></h2></li>
+        <li><h2><span>菜单1</span></h2></li>
+        <li><h2><span>菜单1</span></h2></li>
+        <li><h2><span>菜单1</span></h2></li>
+    </ul>
+</body>
+</html>

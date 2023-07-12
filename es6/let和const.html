@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let和const</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    存在异步问题,当i执行到i等于3的时候才会执行setTimeout
+    */
+    // for(var i=0;i<3;i++){
+    //    setTimeout(function(){
+    //     console.log(i);
+
+    //    },1000*i);
+    // }
+    for(let i=0;i<3;i++){
+        setTimeout(function(){
+        console.log(i);
+
+       },1000*i);
+    }
+    const pi=Math.PI;
+    console.log(pi);
+</script>
+</html>

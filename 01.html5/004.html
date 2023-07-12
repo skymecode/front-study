@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    table,
+    th,
+    td {
+        border: 1px solid #FF7777;
+      /* 收紧单元格之间的边框 */
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>列1</th>
+        <th>列2</th>
+        <th>列3</th>
+        <th>列4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- 合并两行 -->
+        <td>1</td>
+        <!-- 合并两列 -->
+        <td >2</td>
+        <!-- 因为被合并了两列，当前行只有3列 -->
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!-- 第一列，被上一行合并，当前行应该有3列，3列又都被合并到了1列 -->
+        <td >4</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

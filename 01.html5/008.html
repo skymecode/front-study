@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>06元素叠加</title>
+    <style>
+        .box {
+            /* 父元素相对定位 */
+            position: relative;
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box>div {
+            width: 10px;
+            height: 10px;
+            /* 子元素绝对定位 */
+            position: absolute;
+        }
+
+        .box>div:nth-child(1) {
+            background-color: #ff0000;
+            /* z-index设置绝对定位元素的上下堆叠次序，值越大越在前面 */
+            z-index: 20;
+            left: 5px;
+            top: 12px;
+        }
+
+        .box>div:nth-child(2) {
+            background-color: #00ff00;
+            z-index: 10;
+            left: 7px;
+            top: 14px;
+            text-align: right;
+        }
+
+        .box>div:nth-child(3) {
+            background-color: #0000ff;
+            z-index: 30;
+            left: 10px;
+            top: 13px;
+        }
+
+        .box>div:nth-child(4) {
+            background-color: #ff00ff;
+            z-index: 40;
+            left: 20px;
+            top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</body>
+</html>

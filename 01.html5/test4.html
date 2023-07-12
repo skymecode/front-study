@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        .aside-left {
+            width: 200px;
+            height: 100vh;
+            background-color: #ffff00;
+        }
+
+        .aside-right {
+            height: 100vh;
+            /* 占满所有剩余空间 */
+            flex-grow: 1;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <aside class="aside-left">左侧</aside>
+        <section class="aside-right">右侧</section>
+    </main>
+</body>
+</html>

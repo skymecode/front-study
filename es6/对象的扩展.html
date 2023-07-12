@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的扩展</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let name ="skyme";
+    
+    
+    let key="age";
+    let person={
+        [key]:18,
+
+        sayName(){
+            console.log(this.name);
+        }
+    }
+    let cp=Object.assign(person);
+    console.log(person.age)
+    //循环
+    for(let keys in person){
+        console.log(keys);
+    }
+    for(let keys of Object.keys(person)){
+        console.log("key:"+keys);
+    }
+    //值
+    for(let values of Object.values(person)){
+        console.log(values);
+    }
+    let p1={...person};//浅拷贝
+    let p2={like:"girl",...person};//合并
+    let {like,...p}=p2;
+
+</script>
+</html>

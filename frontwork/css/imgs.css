@@ -1,0 +1,114 @@
+.imgs{
+    display: flex;
+    width: 1250px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 10px;
+    z-index: 2;
+
+}
+
+.imgs>.img1{
+    display: none;
+    height: 200px;
+    width: 100px;
+    margin-top: 100px;
+    transition-delay: 1s;
+    margin-right: 10px;
+  
+    cursor: pointer;
+}
+.imgs>.img2{
+    margin-top: 10px;
+    height: auto;
+    width: 1000px;
+}
+.imgs>.img3{
+    display: none;
+    margin-top: 100px;
+    height: 200px;
+    width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.imgs:hover>img{
+    display: block;
+ }
+/* .imgs>ul{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding-left: 0px;
+  
+} */
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 400px;
+    z-index: -1;
+    padding-left: 0px;
+}
+.item {
+    list-style: none;
+    position: absolute;
+    
+    width: 1000px;
+    height: 388px;
+}
+.item:nth-child(1) {
+    background-image: url(https://skyme-1307417630.cos.ap-chengdu.myqcloud.com/skyme/%E5%BC%BA%E5%AD%90%E5%93%A5%E5%A3%81%E7%BA%B8.png);
+    background-size: 100% 100%;
+}
+
+.item:nth-child(2) {
+    background-image: url(../static/20230702_1920_1080.jpg);
+    background-size: 100% 100%;
+}
+.item:nth-child(3) {
+    background-image: url(https://skyme-1307417630.cos.ap-chengdu.myqcloud.com/blog%2F20230429_084150.jpg?q-sign-algorithm=sha1&q-ak=AKIDz5R23D23eniK7egEJwyHtGHdV2kv9nZ806Qft1KrVX65Ne6rSYptaJ3M8ZOj_Wwt&q-sign-time=1688609395;1688612995&q-key-time=1688609395;1688612995&q-header-list=&q-url-param-list=ci-process&q-signature=f04b433c8a25f21836a6a38aff36d1397b48e446&x-cos-security-token=iXlg1SAZzgdx1xPuGc48fXETgSG5duua073d144411ea879169649db89c10f656KsOKbaHf1ye26ZrruhznsXiu6XEhd2lhwGhyzd-MvHOfcMsRHuW-Ir4lpj0gxxcXcCL2TLWOOocQmHxIvwW8NdKvtt49GpWqGtmsCXvRtzeXDUYgMyzywIE75TkZV6ghDvxwVovTFMkmU9j7ClPafVdM7-8OtzEQsz780XJoPrVv5SzsAXZ77loW3ebWXfmClEkJMWmbOByPiAiYSvZ_1w&ci-process=originImage);
+    background-size: 100% 100%;
+}
+
+.item:nth-child(4) {
+    background-image: url(https://skyme-1307417630.cos.ap-chengdu.myqcloud.com/pic_index.jpg?q-sign-algorithm=sha1&q-ak=AKIDQrvDD7R24xn4RGHeCHRnGAHaoq0M3TDbk8eN_f4jKAgHgV4GHAF-gvTEM8J7o0pQ&q-sign-time=1688610109;1688613709&q-key-time=1688610109;1688613709&q-header-list=&q-url-param-list=ci-process&q-signature=9faf41f1fffddb22c4d816f0e2bdf62985e84d6d&x-cos-security-token=iXlg1SAZzgdx1xPuGc48fXETgSG5duuae5ba10b6e3189985fdcc99413a1f4f33KsOKbaHf1ye26ZrruhznsU-EGXINaN7csu1RjBFYg1I8WtEqBOWF1wEeFHEx-h702sh8bl2LolTYwXKf1Tz_DE7TMU-JcQ3qWNpBNA08iFWL33i-MQS5J9VInoGhJ95xomFCRlBObGpeOv9y1lY_B3Cj5D3KrGNQcIdSNpP8n-vFSGgOq791qCqIsivfO5RwS_vhUDAAbFTxpPTjBXLBog&ci-process=originImage);
+    background-size: 100% 100%;
+}
+
+.item:nth-child(5) {
+    background-image: url(https://img0.baidu.com/it/u=1408290706,3186560273&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=313);
+    background-size: 100% 100%;
+ 
+}
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+.pointList {
+    display: flex;
+    position: absolute;
+    z-index: 200;
+    right: 300px;
+    bottom: 1px;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    float: left;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: slategray;
+    cursor: pointer;  
+}
+
+.point.active{
+    background-color: cadetblue;
+}
+

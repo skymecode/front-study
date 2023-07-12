@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201405%2F13%2F20140513234652_vRvNV.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1691142215&t=1f4ad4b6b1e1e46751e5baf75d11e3c2);
+    background-color: rgba(255, 255, 255, 0.8); */
+    
+}

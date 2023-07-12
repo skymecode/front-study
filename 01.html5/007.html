@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>01相对定位</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+
+      .normal-div {
+        background-color: #ff0000;
+      }
+
+      .rel-div {
+        /* 相对定位 */
+        position: relative;
+        background-color: #00ff00;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="normal-div">
+      普通盒子（static）
+    </div>
+    <div class="rel-div">
+      相对定位盒子<br>
+      top: 10px; left: 10px<br>
+      上偏移10像素，左偏移10像素
+    </div>
+    <div class="normal-div">
+      普通盒子（static）<br>
+      我跟在上面相对定位盒子原有位置后面布局
+    </div>
+  </body>
+</html>

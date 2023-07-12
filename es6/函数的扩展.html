@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的扩展</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function myFc(a=1,b=2){
+        return a+b;
+    }
+    console.log(myFc(2,2));
+    function c1(a,b,love){
+        let {c,d}=love;
+        return c;
+    }
+    
+    console.log(c1(1,2,{
+        c:"hello",
+        d:'jack'
+    }));
+    let arr=['hello','skyme']
+</script>
+</html>

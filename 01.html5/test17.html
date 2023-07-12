@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM事件</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML='Hello!'">能够点击的文本</h1>
+    <h1 onclick="changeTxt(this)">通过函数改变文本</h1>
+    <p class="p1"><button onclick="displayDate()">展示</button></p>
+</body>
+<script>
+    function changeTxt(id){
+        id.innerHTML="改变文本";
+    }
+    function displayDate(){
+        document.querySelector(".p1").innerHTML=Date();
+       
+    }
+</script>
+</html>

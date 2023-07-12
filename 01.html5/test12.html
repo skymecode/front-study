@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>02screen对象</title>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<script>
+			var s = "";
+			s += "width（屏幕宽度） = " + screen.width;
+			s += "<br/>height（屏幕高） = " + screen.height;
+			s += "<br/>availWidth（屏幕可用宽度） = " + screen.availWidth;
+			s += "<br/>availHeight（屏幕可用高度） = " + screen.availHeight;
+			s += "<br/>colorDepth（颜色深度） = " + screen.colorDepth;		
+			document.getElementById("div1").innerHTML = s;
+            function myFunction(){
+                alert("123");
+            }
+            setInterval(myFunction,10000);
+		</script>
+	</body>
+</html>

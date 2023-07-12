@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="app"></main>
+
+</body>
+<script>
+    let str=" ";
+    str+= "location.host:"+location.host+"<br>";
+    str+= "location.hostname"+location.hostname+"<br>";
+    str+= "location.href"+location.href+"<br>";
+    str+= "location.pathname"+location.pathname+"<br>";
+    str+= "location.port"+location.port+"<br>";
+    str+= "location.protocol"+location.protocol+"<br>";
+    str+= "location.search"+location.search+"<br>";
+    let dom=document.querySelector("#app");
+    dom.innerHTML=str;
+</script>
+</html>

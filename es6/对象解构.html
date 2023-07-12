@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象解构</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let object = {
+        type: 'object',
+        name: 'object.class'
+    }
+    //对象不用按照顺序解构
+    let {
+        type
+    } = object;
+    console.log(type);
+    //看似是别名，但是，对象的解构赋值的内部机制，是先找到同名属性，然后再赋给对应的变量。真正被赋值的是后者，而不是前者。
+    let obj = {
+        first: 'hello',
+        last: 'world'
+    };
+    let {
+        first: f,
+        last: l
+    } = obj;
+    let myClass = {
+        p: [
+            'hello',
+            {
+                type: 'p',
+                name: {
+                    jack: 'skyme'
+                }
+            }
+        ]
+    };
+    let {
+        p,
+        p: [, {
+            name: {
+                jack
+            }
+        }]
+    } = myClass;
+    console.log(jack);
+
+    const obj1 = {};
+    const obj2 = {
+        foo: 'obj2'
+    };
+    Object.setPrototypeOf(obj1, obj2);
+    const {
+        foo
+    } = obj1;
+    console.log(foo);
+</script>
+
+</html>

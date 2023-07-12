@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子节点遍历</title>
+</head>
+<body>
+    <div class="d1" >
+        <p>p1</p>
+    </div>
+    
+    
+</body>
+<script>
+    let dom= document.querySelector(".d1");
+    let nodeList=dom.childNodes;
+    for(let i=0;i<nodeList.length;i++){
+        let v=nodeList[i];
+        console.log("----------"+i+"--------");
+        console.log(v.nodeName);
+        console.log(v.nodeType);
+        console.log(v.nodeValue);
+    }
+</script>
+</html>

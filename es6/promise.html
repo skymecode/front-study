@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    
+</body>
+<script>
+// new Promise((resolve,reject)=>{
+//     console.log(1111);
+//     resolve(2222);
+// }).then((value)=>{
+//     console.log(value);
+//     return 3333;
+// }).then((value)=>{
+//     console.log(value);
+// })
+// function c1(id,callback){
+//     let userId;
+//     setTimeout(()=>{
+//         userId=id;
+//     },1000)
+//     callback(id);
+// }
+// function c2(id,callback){
+//    let a=id+'skyme';
+//     setTimeout(()=>{
+    
+//     console.log(a)
+//     callback(a);
+//     },1000)
+// }
+// c1('1',function(id){
+//     console.log(id);
+//     c2(id,function(name){
+//         console.log('c2'+name)
+//     })
+// })
+function c1(id){
+    return new Promise(function(resolve, reject){
+        setTimeout(()=>{
+        console.log(id);
+         resolve('skyme');
+        },1000)
+
+    })
+}
+function c2(name){
+    return new Promise(function(resolve,reject){
+        console.log('参数:'+name+'这是promise');
+        resolve('name:'+name);
+        
+    })
+}
+c1('1').then(function(name){
+    return c2(name);
+}).then(function(c2){
+    console.log(c2+'执行结束'); 
+}
+)
+
+    
+//这样的话会十分繁琐
+</script>
+</html>

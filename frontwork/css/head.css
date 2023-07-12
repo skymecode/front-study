@@ -1,0 +1,8 @@
+.head{
+  display: flex;
+ 
+  background-color:#c0c0c0 ;
+  justify-content: center;
+  opacity:0.9;
+  
+}

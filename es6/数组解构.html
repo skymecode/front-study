@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let a=1;
+    // let b=2;
+//  let [a,b]=[1,2];
+//  console.log(b);
+ let [foo,[[bar],baz]]=[1,[[2],3]];
+ console.log(bar);  
+ let [,,name]=["h","h","skyme"];
+ console.log(name);
+ let [,...jack]=["hello","jacklove","ok"]
+ console.log(jack);
+ //解构不成功
+ let[foo2] =[];
+ console.log(foo2);
+ let[bar2,foo3]=[1];
+ console.log(foo3);
+ //不完全解构
+ let[x,y]=[1,2,3];
+ console.log(x,y);
+ let[a,[b],d]=[1,[1,2,3],4];
+ console.log(b);
+</script>
+</html>

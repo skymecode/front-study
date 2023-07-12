@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/imgs.css" rel="stylesheet">
+    <link href="../css/firstbox.css" rel="stylesheet">
+    <link href="../css/content.css" rel="stylesheet">
+    <style>
+        * {
+            list-style-type: none;
+
+        }
+
+        .all {
+            position: relative;
+        }
+
+        .head {
+            position: relative;
+            z-index: 2;
+        }
+
+        .inner {
+            display: flex;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .u1 {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 20px;
+        }
+
+        .u1>li {
+            display: flex;
+
+            padding-left: 50px;
+
+        }
+
+        .img1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .index>h3 {
+            font-size: 20px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .study {
+            position: relative;
+            z-index: 10;
+        }
+
+
+        .study>h3 {
+
+            font-size: 20px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .study:hover>ul {
+            display: block;
+
+        }
+
+        .u2 {
+            position: absolute;
+            /* 其他样式属性 */
+            z-index: 10;
+            /* font-size: 15px; */
+            width: 70px;
+            display: none;
+            background-color: skyblue;
+            margin-top: 50px;
+            border-radius: 5%;
+            padding: 10px;
+
+        }
+
+        .boxContent {
+            display: flex;
+        }
+
+        .firstboxContentImg {
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+
+        }
+
+        .boxContentmenu1>li>span {
+            margin-left: 50px;
+        }
+
+        .boxContentmenu1>li>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .boxContentmenu1>li>a:hover {
+            color: blue;
+        }
+
+        .boxContentmenu2>li>span {
+            margin-left: 50px;
+        }
+
+        .boxContentmenu2>li>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .boxContentmenu2>li>a:hover {
+            color: blue;
+        }
+
+        .footmenu {
+            text-align: center;
+        }
+
+        .secondboxContentImg {
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+        }
+
+        .u2>li>a:hover {
+
+            text-decoration: none;
+            color: black
+        }
+
+        .u2>li>a {
+            font-size: 5px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+
+
+        }
+
+        .u2>li:hover {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="head">
+            <div class="inner">
+                <ul class="u1">
+
+                    <li class="index"><img class="img1" src="../static/首页.svg">
+                        <h3 onclick="index()">首页</h3>
+                    </li>
+                    <li class="study"><img class="img1" src="../static/xuexizhongxin.svg">
+                        <h3>学习</h3>
+                        <ul class="u2">
+                            <li><a href="./h1.html">HTML学习</a></li>
+                            <li><a href="./h2.html">CSS学习</a></li>
+                            <li><a href="./h3.html">JS学习</a></li>
+                            <li><a href="./h4.html">其他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="imgs">
+                <img class="img1" id="leftBtn" src="../static/左.svg">
+                <!-- <img class="img2" title="铃芽之旅" src="https://pic.rmb.bdstatic.com/bjh/c7d096f6c18bf9d0e1fcea34b1f3b1fc4190.png"> -->
+                <ul class="list">
+                    <li class="item active"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                </ul>
+                <ul class="pointList">
+                    <li class="point active" data-index=0></li>
+                    <li class="point" data-index=1></li>
+                    <li class="point" data-index=2></li>
+                    <li class="point" data-index=3></li>
+                    <li class="point" data-index=4></li>
+                </ul>
+                <img class="img3" id="rightBtn" src="../static/右.svg">
+            </div>
+            <HR style=" FILTER: alpha (opacity = 100, finishopacity =0 , style= 3 )" width="90%" color=#00255 cb 9
+                SIZE=3>
+            <div class="firstBox">
+                <div class="firstBoxHeader">
+                    <ul>
+                        <li style="font-size: 22px; font-weight: bold; ;">第一个内容:</li>
+                    </ul>
+                </div>
+                <div class="boxContent">
+                    <img class="firstboxContentImg"
+                        src="https://s1-imfile.feishucdn.com/static-resource/v1/v2_dd2ed401-0ff2-49bf-99fb-ec4322cb0beg~?image_size=noop&cut_type=&quality=&format=image&sticker_format=.webp">
+                    <div>
+                        <ul class="boxContentmenu1">
+                            <li><a href="../html/h1.html" title="标题1">标题1</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题2">标题2</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题3">标题3</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题4">标题4</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题5">标题5</a><span>2023-07-05</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="firstBox">
+                <div class="firstBoxHeader">
+                    <ul>
+                        <li style="font-size: 22px; font-weight: bold;">第二个内容:</li>
+                    </ul>
+                </div>
+                <div class="boxContent">
+                    <img class="secondboxContentImg"
+                        src="https://skyme-1307417630.cos.ap-chengdu.myqcloud.com/skyme/ikun.png">
+                    <div>
+                        <ul class="boxContentmenu2">
+                            <li><a href="../html/h1.html" title="标题1">标题1</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题2">标题2</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题3">标题3</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题4">标题4</a><span>2023-07-05</span></li>
+                            <li><a href="../html/h1.html" title="标题5">标题5</a><span>2023-07-05</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <ul class="footmenu">
+                <li>©2022 - 2023 By <a href="https://skym1.gitee.io/blog/">Skyme</a></li>
+                <li>XXXXXXX</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function index() {
+        location.href = "http://" + location.host + "/html/index.html";
+    }
+    var items = document.querySelectorAll(".item"); //图片节点
+    var points = document.querySelectorAll(".point") //点
+    var all = document.querySelector(".list")
+    var left = document.getElementById("leftBtn");
+    var right = document.getElementById("rightBtn");
+    var index = 0; //全局变量
+    var time = 0; //定时器跳转参数初始化
+    //封装一个清除active方法
+    var clearActive = function () {
+        for (i = 0; i < items.length; i++) {
+            items[i].className = 'item';
+        }
+        for (j = 0; j < points.length; j++) {
+            points[j].className = 'point';
+        }
+    }
+
+    //将元素展出(改为active)
+    var goIndex = function () {
+        clearActive();
+        items[index].className = 'item active';
+        points[index].className = 'point active';
+    }
+    //左按钮事件
+    var goLeft = function () {
+        if (index == 0) {
+            index = 4;
+        } else {
+            index--;
+        }
+        goIndex();
+    }
+
+    //右按钮事件
+    var goRight = function () {
+        if (index < 4) {
+            index++;
+        } else {
+            index = 0;
+        }
+        goIndex();
+    }
+
+
+    //绑定点击事件监听
+    left.addEventListener('click', function () {
+        goLeft();
+        time = 0; //计时器跳转清零
+    })
+
+    right.addEventListener('click', function () {
+        goRight();
+        time = 0; //计时器跳转清零
+    })
+
+    for (let i = 0; i < points.length; i++) {
+        points[i].addEventListener('click', function () {
+            var pointIndex = this.getAttribute('data-index')
+            index = pointIndex;
+            goIndex();
+            time = 0; //计时器跳转清零
+        })
+    }
+    //计时器轮播效果
+    var timer;
+
+    function play() {
+        timer = setInterval(() => {
+            time++;
+            if (time == 20) {
+                goRight(); //向右轮播
+                time = 0;
+            }
+        }, 100)
+    }
+    play();
+    //移入清除计时器
+    all.onmousemove = function () {
+        clearInterval(timer)
+    }
+    //移出启动计时器
+    all.onmouseleave = function () {
+        play();
+    }
+</script>
+
+</html>

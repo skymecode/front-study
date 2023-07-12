@@ -1,0 +1,7 @@
+{
+    "code": 1,
+    "msg": "登录成功",
+    "data": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjg0MDY4ODYyLCJleHAiOjE2ODQwNzI0NjJ9.A4z0b7G4Ff2zl-RntMf7QKV_j9UEcJaYTuFFsARu6ksTV6CeW6Zi_GiJAZEZaiBKVcDdFBf4XhDzDV6VoVhttA"
+    }
+}

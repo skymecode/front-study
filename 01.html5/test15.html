@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">这是一个测试</div>
+
+</body>
+<script>
+    let dom=document.querySelector(".div1");
+    dom.style.color="#f00";
+    dom.style.border="1px solid #f00";  
+    dom.style.backgroundColor="#0f0";
+    dom.style.paddingTop="10px";
+    let classList=dom.classList;
+    classList.add("c1");
+    classList.add("c2");
+    classList.remove("div1");
+    classList.toggle("c4");
+    console.log(classList.contains("c4")); // true
+
+    console.log(dom.className); // c1 c2 c4
+    console.log(classList); // DOMTokenList对象["c1","c2","c4"]
+
+</script>
+</html>
